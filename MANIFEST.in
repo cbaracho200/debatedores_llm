@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include requirements.txt
+include requirements-dev.txt
+recursive-include debatedores *.py
+recursive-include debatedores/config *.yaml
+recursive-include debatedores/prompts *.txt
+include debatedores/py.typed
