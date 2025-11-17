@@ -1,0 +1,47 @@
+# Configuração de exemplo para o framework Debatedores
+
+debate:
+  # Número máximo de rodadas de debate
+  max_rounds: 5
+
+  # Meta de convergência (0.0 a 1.0)
+  # Debate para quando este score é atingido
+  agreement_target: 0.8
+
+  # Tamanho dos chunks de documento em tokens
+  chunk_size: 512
+
+  # Sobreposição entre chunks
+  chunk_overlap: 50
+
+  # Temperatura padrão para geração de LLM
+  temperature: 0.7
+
+  # Exibir logs detalhados
+  verbose: true
+
+llm:
+  # Provider: "openai", "gemini", "anthropic"
+  provider: "openai"
+
+  # Nome do modelo (None = usa padrão do provider)
+  model_name: null
+
+  # API key (None = usa variável de ambiente)
+  api_key: null
+
+  # Limite de tokens por resposta
+  max_tokens: null
+
+  # Timeout em segundos
+  timeout: 300
+
+embedding:
+  # Provider de embeddings
+  provider: "openai"
+
+  # Nome do modelo (None = usa padrão)
+  model_name: null
+
+  # API key (None = usa variável de ambiente)
+  api_key: null
